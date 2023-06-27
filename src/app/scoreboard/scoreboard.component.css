@@ -1,0 +1,27 @@
+:host {
+  text-align: center;
+  padding: 16px;
+}
+
+.scores-section,
+.records {
+  display: flex;
+  font-weight: 600;
+  color: #fff;
+  background: mediumseagreen;
+  font-size: 1.5rem;
+}
+
+div {
+  flex-grow: 1;
+  padding: 8px;
+  flex-basis: 0;
+  color: #fff;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+
+.new-best {
+  color: yellow;
+}

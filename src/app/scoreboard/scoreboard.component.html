@@ -1,0 +1,16 @@
+<h1 *ngIf="time" class="timer">Time left: {{ time }} seconds</h1>
+<h1 *ngIf="!time" class="timer">Time's up</h1>
+
+<section class="scores-section">
+  <div class="wpm">Words per minute: {{score.wpm}}</div>
+  <div class="errors">Errors: {{score.errors}}</div>
+  <div class="score">Total score: {{score.total}}</div>
+</section>
+<section class="records">
+  <div class="accuracy">Accuracy: {{score.accuracy}}%</div>
+  <div class="best">
+    Best score: {{records.best}}
+    <span class="new-best" *ngIf="this.lastBest < records.best">&nbsp;(New)</span>
+  </div>
+  <div class="last">Last score: {{records.last}}</div>
+</section>

@@ -1,0 +1,5 @@
+<p>
+  <span *ngFor="let word of typedWords" class="previous" [class.error]="word.hasError">{{ word.word ? word.word + ' ' : '' }}</span>
+  <span class="next">{{ nextWord ? nextWord + ' ' : '' }}</span>
+  <span class="upcoming">{{ upcomingSentence }}</span>
+</p>

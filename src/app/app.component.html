@@ -1,0 +1,10 @@
+<main>
+  <app-scoreboard [start]="startTyping" [score]="score" [records]="records" (timesUp)="timesUp($event)"></app-scoreboard>
+  <app-paragraph [typedWords]="previousWords" [nextWord]="nextWord" [upcomingSentence]="upcomingSentence"></app-paragraph>
+  <app-textfield [disabled]="!startTyping" (typing)="newWordEntered($event)"></app-textfield>
+
+  <div class="actions">
+    <button *ngIf="!startTyping" (click)="startTimer()">Start</button>
+    <button *ngIf="startTyping" (click)="stopTimer()">Stop</button>
+  </div>
+</main>

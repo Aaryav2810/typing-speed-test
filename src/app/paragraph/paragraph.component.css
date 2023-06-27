@@ -1,0 +1,20 @@
+:host {
+  padding: 16px;
+}
+p {
+  padding: 16px;
+}
+.previous {
+  opacity: 0.6;
+
+}
+.previous.error {
+  color: red;
+  font-weight: bold;
+  background-color: lightcyan;}
+
+.next {
+  font-weight: bold;
+  color: deepskyblue;
+  background-color: lightcyan;
+}

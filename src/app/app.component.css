@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+main {
+  height: 100%;
+  width: 70%;
+  background-color: white;
+  padding: 24px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  margin: 16px;
+  width: 100px;
+  color: #8bc34a;
+  border: solid #8bc34a;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+button:hover {
+  outline: none;
+  border: none;
+  background-color: #8bc34a;
+  color: #fff;
+}

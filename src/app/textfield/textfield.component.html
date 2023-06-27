@@ -1,0 +1,3 @@
+<textarea placeholder="Start typing here..." [disabled]="disabled" #input class="no-selection" (keydown.Enter)="restrictKeys($event)"
+  (keydown.ArrowLeft)="restrictKeys($event)"
+  (keydown.Space)="onKeydownSpace($event)" (keyup)="onKeyup($event)" (paste)="$event.preventDefault()"></textarea>
